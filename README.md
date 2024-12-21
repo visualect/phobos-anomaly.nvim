@@ -1,4 +1,4 @@
-# 🚪 Haunted Chamber
+# 🪐 Haunted Starport
 
 ### Installation
 - Lazy.nvim
@@ -14,5 +14,6 @@
 
 ### Influences
 1. [ice-cave.nvim](https://github.com/mcauley-penney/ice-cave.nvim)
-2. [vim-substrata](https://github.com/lunacookies/vim-substrata)
-3. [poimandres.nvim](https://github.com/olivercederborg/poimandres.nvim)
+2. The colorscheme of [Back to Saturn X I](https://doomwiki.org/wiki/Back_to_Saturn_X)
+3. [vim-substrata](https://github.com/lunacookies/vim-substrata)
+4. [poimandres.nvim](https://github.com/olivercederborg/poimandres.nvim)
