@@ -36,9 +36,5 @@ function M.tint(color, percent)
   return "#" .. string.format("%02x%02x%02x", r, g, b)
 end
 
-function M.update(hl_tbl, opts)
-  return vim.tbl_deep_extend("force", hl_tbl, opts)
-end
-
 
 return M
