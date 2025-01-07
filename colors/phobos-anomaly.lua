@@ -49,7 +49,7 @@ hl["MsgArea"]        = {}
 hl["MsgSeparator"]   = { fg = gray2 }
 hl["NonText"]        = { fg = gray5 }
 hl["Normal"]         = { fg = gray9 }
-hl["NormalFloat"]    = { fg = gray8, bg = gray1 }
+hl["NormalFloat"]    = { fg = gray8, bg = gray2 }
 hl["Pmenu"]          = { fg = gray7, bg = gray2 }
 hl["PmenuMatch"]     = { fg = blue1 }
 hl["PmenuMatchSel"]  = { fg = yellow1, bg = blue2 }
@@ -179,7 +179,7 @@ hl["@text.uri"] = { fg = blue1, underline = true }
 
 for level = 1, 6 do
   local heading = "@markup.heading." .. level .. ".markdown"
-  hl[heading] = { fg = blue1, bg = gray3 }
+  hl[heading] = { fg = blue2 }
 end
 
 hl["@constant.builtin"] = { link = "Constant" }
