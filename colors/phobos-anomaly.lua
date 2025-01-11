@@ -120,9 +120,9 @@ hl["Typedef"] = { link = "Type" }
 -- Filetype
 --------------------------------------------------
 -- diff
-hl["DiffAdd"] = { bg = "#112C15", fg = "#B6E2BC" }
+hl["DiffAdd"] = { bg = "#1B2C21", fg = "#A8CBB0" }
 hl["DiffChange"] = { bg = utils.tint("#566ab1", -40) }
-hl["DiffDelete"] = { bg = "#47130B", fg = "#F1B1A7" }
+hl["DiffDelete"] = { bg = "#331B1D", fg = "#CC8E96" }
 hl["DiffText"] = { bg = "#566ab1" }
 
 -- Gitcommit diffs

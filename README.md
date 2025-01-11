@@ -1,4 +1,4 @@
-#  🪐 phobos-anomaly.nvim
+#  🪐  phobos-anomaly.nvim
 
 ## Installation
 
