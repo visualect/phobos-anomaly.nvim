@@ -1,3 +1,5 @@
+local v = vim
+local set_hl = v.api.nvim_set_hl
 local utils = require("utils")
 
 local hl = {}
@@ -25,7 +27,7 @@ local blue1 = "#566ab1"
 local blue2 = "#859CBB"
 local blue3 = "#98B4FE"
 
-vim.g.colors_name = "phobos-anomaly"
+v.g.colors_name = "phobos-anomaly"
 
 --------------------------------------------------
 -- UI
@@ -244,8 +246,8 @@ hl["DiagnosticUnnecessary"] = { fg = hl["Comment"]["fg"], undercurl = true }
 hl["LspSignatureActiveParameter"] = { sp = gray9, underline = true }
 
 -- Semantic Tokens
-for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-	vim.api.nvim_set_hl(0, group, {})
+for _, group in ipairs(v.fn.getcompletion("@lsp", "highlight")) do
+	v.api.nvim_set_hl(0, group, {})
 end
 
 --------------------------------------------------
@@ -311,7 +313,6 @@ hl["VisualNonText"] = { fg = hl["Comment"]["fg"], bg = hl["Visual"]["bg"] }
 --------------------------------------------------
 -- Execute
 --------------------------------------------------
-local set_hl = vim.api.nvim_set_hl
 for group, opts in pairs(hl) do
 	set_hl(0, group, opts)
 end
