@@ -74,7 +74,6 @@ hl["TabLineFill"] = {}
 hl["TermCursor"] = { link = "Cursor" }
 hl["Title"] = { link = "Directory" }
 hl["Todo"] = { link = "SpecialComment" }
-hl["Underlined"] = { underline = true }
 hl["Visual"] = { bg = gray4 }
 hl["WarningMsg"] = { link = "Error" }
 hl["Whitespace"] = { link = "NonText" }
@@ -82,8 +81,8 @@ hl["WinBar"] = { link = "Normal" }
 hl["WinBarNC"] = {}
 
 hl["WinSeparator"] = { fg = hl["NormalFloat"]["bg"] }
-hl["MatchParen"] = { fg = yellow2, bg = hl["Visual"]["bg"] }
-hl["FloatBorder"] = { fg = gray6, bg = hl["NormalFloat"]["bg"] }
+hl["MatchParen"] = { bg = gray3, underline = true, sp = gray6 }
+hl["FloatBorder"] = { fg = gray4, bg = hl["NormalFloat"]["bg"] }
 hl["FloatTitle"] = { fg = blue3, bg = hl["NormalFloat"]["bg"] }
 
 --------------------------------------------------
@@ -297,18 +296,20 @@ hl["BlinkCmpLabelMatch"] = { link = "PmenuMatch" }
 
 -- rrethy/vim-illuminate
 hl["IlluminatedWordText"] = { link = "MatchParen" }
-hl["IlluminatedWordRead"] = { link = "MatchParen" }
-hl["IlluminatedWordWrite"] = { link = "MatchParen" }
+hl["IlluminatedWordRead"] = { link = "IlluminatedWordText" }
+hl["IlluminatedWordWrite"] = { link = "IlluminatedWordText" }
 
 -- echasnovski/mini.cursorword
-hl["MiniCursorwordCurrent"] = nil
-hl["MiniCursorword"] = { link = "Search" }
+hl["MiniCursorwordCurrent"] = {}
+hl["MiniCursorword"] = { link = "IlluminatedWordText" }
 
 -- rareitems/hl_match_area.nvim
-hl["MatchArea"] = { link = "Visual" }
+hl["MatchArea"] = { bg = gray3 }
 
 -- mcauley-penney/visual-whitespace.nvim
 hl["VisualNonText"] = { fg = hl["Comment"]["fg"], bg = hl["Visual"]["bg"] }
+
+hl["VisualMatch"] = { link = "MatchParen" }
 
 --------------------------------------------------
 -- Execute
