@@ -252,6 +252,44 @@ end
 --------------------------------------------------
 -- Plugins
 --------------------------------------------------
+-- folke/lazy.nvim
+hl["LazyH2"] = { link = "FloatTitle" }
+hl["LazyButton"] = { link = "Visual" }
+hl["LazyButtonActive"] = { link = "Search" }
+hl["LazyCommit"] = { link = "@markup.raw.block" }
+hl["LazyCommitType"] = { link = "@markup.heading.gitcommit" }
+hl["LazyCommitIssue"] = { link = "Number" }
+hl["LazyProgressDone"] = { link = "LazyComment" }
+hl["LazyProgressTodo"] = { link = "FloatBorder" }
+hl["LazyReasonCmd"] = { link = "Comment" }
+hl["LazyReasonColorscheme"] = { link = "Comment" }
+hl["LazyReasonEvent"] = { link = "Comment" }
+hl["LazyReasonFt"] = { link = "Comment" }
+hl["LazyReasonPlugin"] = { link = "Comment" }
+hl["LazyReasonRequire"] = { link = "Comment" }
+hl["LazyReasonSource"] = { link = "Comment" }
+hl["LazyReasonStart"] = { link = "Comment" }
+hl["LazySpecial"] = { link = "Comment" }
+
+-- mason-org/mason.nvim
+hl["MasonLink"] = { fg = blue2 }
+hl["MasonError"] = { link = "DiagnosticError" }
+hl["MasonMuted"] = { link = "Comment" }
+hl["MasonHeader"] = { link = "FloatTitle" }
+hl["MasonNormal"] = { link = "NormalFloat" }
+hl["MasonHeading"] = { link = "FloatTitle" }
+hl["MasonWarning"] = { link = "DiagnosticWarn" }
+hl["MasonBackdrop"] = { link = "NormalFloat" }
+hl["MasonHighlight"] = { fg = gray6 }
+hl["MasonHighlightBlock"] = { bg = gray4 }
+hl["MasonMutedBlock"] = { bg = gray4 }
+hl["MasonMutedBlockBold"] = { link = "Comment" }
+hl["MasonHeaderSecondary"] = { link = "Search" }
+hl["MasonHighlightBlockBold"] = { link = "Search" }
+hl["MasonHighlightSecondary"] = { link = "Search" }
+hl["MasonHighlightBlockSecondary"] = {}
+hl["MasonHighlightBlockBoldSecondary"] = {}
+
 -- lewis6991/gitsigns.nvim
 hl["GitSignsAdd"] = { fg = utils.tint(green2, -25) }
 hl["GitSignsChange"] = { fg = utils.tint(yellow1, -25) }
@@ -309,6 +347,7 @@ hl["MatchArea"] = { bg = gray3 }
 -- mcauley-penney/visual-whitespace.nvim
 hl["VisualNonText"] = { fg = hl["Comment"]["fg"], bg = hl["Visual"]["bg"] }
 
+-- mcauley-penney/match-visual.nvim
 hl["VisualMatch"] = { link = "MatchParen" }
 
 --------------------------------------------------
