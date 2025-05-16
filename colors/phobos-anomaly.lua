@@ -70,7 +70,9 @@ hl["SpecialKey"] = { fg = yellow2 }
 hl["StatusLine"] = { fg = gray9 }
 hl["StatusLineNC"] = {}
 hl["Substitute"] = { fg = red5, bg = gray4 }
-hl["TabLineFill"] = {}
+hl["TabLine"] = { fg = gray6 }
+hl["TabLineFill"] = { fg = gray5 }
+hl["TabLineSel"] = { fg = blue3 }
 hl["TermCursor"] = { link = "Cursor" }
 hl["Title"] = { link = "Directory" }
 hl["Todo"] = { link = "SpecialComment" }
