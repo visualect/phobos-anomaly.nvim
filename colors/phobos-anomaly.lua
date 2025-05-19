@@ -319,6 +319,11 @@ hl["GitSignsVirtLnum"] = { link = "LineNr" }
 -- stevearc/aerial.nvim
 hl["AerialLine"] = { link = "PmenuSel" }
 
+-- folke/edgy.nvim
+hl["EdgyIcon"] = { fg = gray6, bg = gray2 }
+hl["EdgyIconActive"] = { link = "EdgyIcon" }
+hl["EdgyWinBar"] = { bg = gray2, underline = true, sp = gray4 }
+
 -- hrsh7th/nvim-cmp
 hl["CmpItemAbbrDeprecated"] = { strikethrough = true }
 hl["CmpItemAbbrMatch"] = { link = "PmenuMatch" }
