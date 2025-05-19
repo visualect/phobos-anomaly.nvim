@@ -44,15 +44,15 @@ hl["EndOfBuffer"] = { link = "NonText" }
 hl["Error"] = { fg = red5 }
 hl["ErrorMsg"] = { link = "Error" }
 hl["FoldColumn"] = { link = "NonText" }
-hl["Folded"] = { bg = gray1, fg = gray7 }
+hl["Folded"] = { fg = gray7, bg = gray1 }
 hl["IncSearch"] = { link = "Search" }
 hl["LineNr"] = { link = "NonText" }
 hl["ModeMsg"] = { fg = red2 }
 hl["MoreMsg"] = { link = "ModeMsg" }
-hl["MsgArea"] = {}
+hl["MsgArea"] = { link = "Normal" }
 hl["MsgSeparator"] = { fg = gray2 }
 hl["NonText"] = { fg = gray5 }
-hl["Normal"] = { fg = gray9 }
+hl["Normal"] = { fg = gray9, bg = gray0 }
 hl["NormalFloat"] = { fg = gray8, bg = gray2 }
 hl["Pmenu"] = { fg = gray7, bg = gray2 }
 hl["PmenuMatch"] = { fg = blue2 }
