@@ -299,9 +299,9 @@ hl["GitSignsDelete"] = { fg = utils.tint(red5, -25) }
 hl["GitSignsChangedelete"] = { link = "GitSignsChange" }
 hl["GitSignsTopdelete"] = { link = "GitSignsDelete" }
 hl["GitSignsUntracked"] = { link = "NonText" }
-hl["GitSignsStagedAdd"] = { fg = utils.tint(green2, -40) }
-hl["GitSignsStagedChange"] = { fg = utils.tint(yellow1, -40) }
-hl["GitSignsStagedDelete"] = { fg = utils.tint(red5, -40) }
+hl["GitSignsStagedAdd"] = { fg = utils.tint(green2, -60) }
+hl["GitSignsStagedChange"] = { fg = utils.tint(yellow1, -60) }
+hl["GitSignsStagedDelete"] = { fg = utils.tint(red5, -60) }
 hl["GitSignsStagedChangedelete"] = { link = "GitSignsStagedChange" }
 hl["GitSignsStagedTopdelete"] = { link = "GitSignsStagedDelete" }
 hl["GitSignsStagedUntracked"] = { link = "GitSignsStagedAdd" }
