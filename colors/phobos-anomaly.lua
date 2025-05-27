@@ -9,7 +9,7 @@ local gray2 = "#212428"
 local gray3 = "#23262B"
 local gray4 = "#242931"
 local gray5 = "#3c3f4e"
-local gray6 = "#4C5062"
+local gray6 = "#41445A"
 local gray7 = "#575C70"
 local gray8 = "#B7BFCE"
 local gray9 = "#CCD5E5"
@@ -53,14 +53,14 @@ hl["MoreMsg"] = { link = "ModeMsg" }
 hl["MsgArea"] = { link = "Normal" }
 hl["MsgSeparator"] = { fg = gray2 }
 hl["NonText"] = { fg = gray5 }
-hl["Normal"] = { fg = gray9, bg = gray0 }
+hl["Normal"] = { fg = gray9 }
 hl["NormalFloat"] = { fg = gray8, bg = gray2 }
 hl["Pmenu"] = { fg = gray7, bg = gray2 }
-hl["PmenuMatch"] = { fg = blue2 }
-hl["PmenuMatchSel"] = { fg = yellow1, bg = blue4 }
-hl["PmenuSbar"] = { link = "Normal" }
+hl["PmenuMatch"] = { fg = blue3 }
+hl["PmenuMatchSel"] = { bg = gray4 }
+hl["PmenuSbar"] = { link = "Pmenu" }
 hl["PmenuSel"] = { bg = gray4 }
-hl["PmenuThumb"] = { bg = gray3 }
+hl["PmenuThumb"] = { bg = gray5 }
 hl["Question"] = { fg = green3 }
 hl["QuickFixLine"] = { link = "Search" }
 hl["Search"] = { fg = gray0, bg = yellow2 }
@@ -160,7 +160,7 @@ hl["helpVim"] = { link = "Normal" }
 
 -- Markdown
 hl["markdownBlockquote"] = { fg = blue3 }
-hl["markdownCodeBlock"] = { link = "@markup.raw.block" }
+hl["markdownCodeBlock"] = { bg = gray3 }
 hl["markdownHeadingRule"] = { link = "markdownRule" }
 hl["markdownLinkText"] = { link = "String" }
 hl["markdownListMarker"] = { link = "Normal" }
@@ -175,7 +175,7 @@ hl["@namespace"] = { fg = blue4 }
 hl["@number.comment"] = { link = "Comment" }
 hl["@punctuation"] = { link = "Normal" }
 hl["@string.regex"] = { fg = green2 }
-hl["@markup.raw.block"] = { bg = gray3 }
+hl["@markup.raw.block"] = { link = "markdownCodeBlock" }
 hl["@text.uri"] = { fg = blue2, underline = true }
 hl["@constant.builtin"] = { link = "Constant" }
 hl["@function.call"] = { link = "Normal" }
@@ -243,8 +243,6 @@ end
 hl["DiagnosticUnnecessary"] = { fg = hl["Comment"]["fg"], undercurl = true }
 
 hl["LspCodeLens"] = { fg = gray7 }
-
--- Handlers
 hl["LspSignatureActiveParameter"] = { sp = gray9, underline = true }
 
 -- Semantic Tokens
@@ -334,11 +332,12 @@ hl["CmpItemKind"] = { link = "Keyword" }
 hl["BlinkCmpDocBorder"] = { link = "FloatBorder" }
 hl["BlinkCmpDocSeparator"] = { link = "NonText" }
 hl["BlinkCmpGhostText"] = { link = "NonText" }
-hl["BlinkCmpKind"] = { fg = blue2 }
+hl["BlinkCmpKind"] = { fg = blue3 }
 hl["BlinkCmpLabel"] = { fg = gray7 }
 hl["BlinkCmpLabelDetail"] = { link = "NonText" }
 hl["BlinkCmpLabelDescription"] = { fg = gray5 }
 hl["BlinkCmpLabelMatch"] = { link = "PmenuMatch" }
+hl["BlinkCmpMenuSelection"] = { link = "PmenuMatchSel" }
 
 -- rrethy/vim-illuminate
 hl["IlluminatedWordText"] = { link = "MatchParen" }
