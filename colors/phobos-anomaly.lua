@@ -293,13 +293,13 @@ hl["MasonHighlightBlockBoldSecondary"] = {}
 
 -- lewis6991/gitsigns.nvim
 hl["GitSignsAdd"] = { fg = utils.tint(green2, -25) }
-hl["GitSignsChange"] = { fg = utils.tint(yellow1, -25) }
+hl["GitSignsChange"] = { fg = utils.tint(blue4, -25) }
 hl["GitSignsDelete"] = { fg = utils.tint(red5, -25) }
 hl["GitSignsChangedelete"] = { link = "GitSignsChange" }
 hl["GitSignsTopdelete"] = { link = "GitSignsDelete" }
 hl["GitSignsUntracked"] = { link = "NonText" }
 hl["GitSignsStagedAdd"] = { fg = utils.tint(green2, -60) }
-hl["GitSignsStagedChange"] = { fg = utils.tint(yellow1, -60) }
+hl["GitSignsStagedChange"] = { fg = utils.tint(blue4, -60) }
 hl["GitSignsStagedDelete"] = { fg = utils.tint(red5, -60) }
 hl["GitSignsStagedChangedelete"] = { link = "GitSignsStagedChange" }
 hl["GitSignsStagedTopdelete"] = { link = "GitSignsStagedDelete" }
