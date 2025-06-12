@@ -200,6 +200,7 @@ for level = 1, 4 do
 end
 
 -- Markdown
+hl["@conceal.markdown_inline"] = { link = "Operator" }
 hl["@markup.link.markdown_inline"] = { link = "Normal" }
 hl["@markup.list.checked.markdown"] = { link = "DiagnosticOk" }
 hl["@markup.list.unchecked.markdown"] = { link = "DiagnosticError" }
