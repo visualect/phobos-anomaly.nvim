@@ -191,7 +191,7 @@ hl["@text.reference"] = { link = "String" }
 -- Latex
 hl["@markup.link.label"] = { link = "String" }
 hl["@markup.link.latex"] = { link = "Keyword" }
-hl["@markup.environment.latex"] = { link = "@markup.raw.block" }
+hl["@markup.environment.latex"] = { link = "markdownCodeBlock" }
 hl["@module.latex"] = { link = "Function" }
 hl["@punctuation.special.latex"] = { link = "Function" }
 
@@ -204,7 +204,7 @@ hl["@markup.link.markdown_inline"] = { link = "Normal" }
 hl["@markup.list.checked.markdown"] = { link = "DiagnosticOk" }
 hl["@markup.list.unchecked.markdown"] = { link = "DiagnosticError" }
 hl["@markup.quote.markdown"] = { link = "markdownBlockquote" }
-hl["@markup.raw.markdown_inline"] = { bg = hl["@markup.raw.block"]["bg"] }
+hl["@markup.raw.markdown_inline"] = { link = "markdownCodeBlock" }
 hl["@punctuation.special.markdown"] = { link = "@markup.quote.markdown" }
 
 for level = 1, 6 do
