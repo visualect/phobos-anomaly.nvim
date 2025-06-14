@@ -205,7 +205,7 @@ hl["@markup.link.markdown_inline"] = { link = "Normal" }
 hl["@markup.list.checked.markdown"] = { link = "DiagnosticOk" }
 hl["@markup.list.unchecked.markdown"] = { link = "DiagnosticError" }
 hl["@markup.quote.markdown"] = { link = "markdownBlockquote" }
-hl["@markup.raw.markdown_inline"] = { link = "markdownCodeBlock" }
+hl["@markup.raw.markdown_inline"] = { fg = blue3, bg = gray3 }
 hl["@punctuation.special.markdown"] = { link = "@markup.quote.markdown" }
 
 for level = 1, 6 do
