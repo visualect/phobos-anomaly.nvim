@@ -23,10 +23,12 @@ local yellow2 = "#F8BC77"
 local green1 = "#1B2C21"
 local green2 = "#67AB7D"
 local green3 = "#A8CFB5"
-local blue1 = "#566ab1"
-local blue2 = "#859CBB"
-local blue3 = "#9194B8"
-local blue4 = "#98B4FE"
+local blue0 = "#20243F"
+local blue1 = "#363E69"
+local blue2 = "#566ab1"
+local blue3 = "#859CBB"
+local blue4 = "#9194B8"
+local blue5 = "#98B4FE"
 
 v.g.colors_name = "phobos-anomaly"
 
@@ -40,12 +42,12 @@ hl["Cursor"] = { bg = red5 }
 hl["CursorLine"] = { bg = gray2 }
 hl["CursorLineNr"] = { link = "Normal" }
 hl["Delimiter"] = { link = "Normal" }
-hl["Directory"] = { fg = blue4 }
+hl["Directory"] = { fg = blue5 }
 hl["EndOfBuffer"] = { link = "NonText" }
 hl["Error"] = { fg = red5 }
 hl["ErrorMsg"] = { link = "Error" }
 hl["FoldColumn"] = { link = "NonText" }
-hl["Folded"] = { fg = blue3, bg = gray1 }
+hl["Folded"] = { fg = blue4, bg = gray1 }
 hl["IncSearch"] = { link = "Search" }
 hl["LineNr"] = { link = "NonText" }
 hl["ModeMsg"] = { fg = red2 }
@@ -56,7 +58,7 @@ hl["NonText"] = { fg = gray5 }
 hl["Normal"] = { fg = gray9 }
 hl["NormalFloat"] = { fg = gray8, bg = gray2 }
 hl["Pmenu"] = { fg = gray7, bg = gray2 }
-hl["PmenuMatch"] = { fg = blue3 }
+hl["PmenuMatch"] = { fg = blue4 }
 hl["PmenuMatchSel"] = { bg = gray4 }
 hl["PmenuSbar"] = { link = "Pmenu" }
 hl["PmenuSel"] = { bg = gray4 }
@@ -66,35 +68,35 @@ hl["QuickFixLine"] = { link = "Search" }
 hl["Search"] = { fg = gray0, bg = yellow2 }
 hl["SignColumn"] = { link = "Normal" }
 hl["SpecialChar"] = { link = "Special" }
-hl["SpecialComment"] = { fg = yellow2 }
-hl["SpecialKey"] = { fg = yellow2 }
+hl["SpecialComment"] = { link = "Special" }
+hl["SpecialKey"] = {}
 hl["StatusLine"] = { fg = gray9 }
 hl["StatusLineNC"] = {}
 hl["Substitute"] = { fg = red5, bg = gray4 }
 hl["TabLine"] = { fg = gray6 }
 hl["TabLineFill"] = { fg = gray5 }
-hl["TabLineSel"] = { fg = blue4 }
+hl["TabLineSel"] = { fg = blue5 }
 hl["TermCursor"] = { link = "Cursor" }
 hl["Title"] = { link = "Directory" }
 hl["Todo"] = { link = "SpecialComment" }
-hl["Visual"] = { bg = gray4 }
+hl["Visual"] = { bg = blue0 }
 hl["WarningMsg"] = { link = "Error" }
 hl["Whitespace"] = { link = "NonText" }
 hl["WinBar"] = { link = "Normal" }
 hl["WinBarNC"] = {}
 
 hl["WinSeparator"] = { fg = hl["NormalFloat"]["bg"] }
-hl["MatchParen"] = { bg = gray3, underline = true, sp = gray6 }
+hl["MatchParen"] = { fg = yellow2, bg = gray4 }
 hl["FloatBorder"] = { fg = gray4, bg = hl["NormalFloat"]["bg"] }
-hl["FloatTitle"] = { fg = blue4, bg = hl["NormalFloat"]["bg"] }
+hl["FloatTitle"] = { fg = blue5, bg = hl["NormalFloat"]["bg"], sp = gray4, underline = true }
 
 --------------------------------------------------
 --  Syntax
 --------------------------------------------------
 hl["Comment"] = { fg = gray6 }
 hl["Constant"] = { fg = red2 }
-hl["Function"] = { fg = blue4 }
-hl["Keyword"] = { fg = blue2 }
+hl["Function"] = { fg = blue5 }
+hl["Keyword"] = { fg = blue3 }
 hl["Number"] = { fg = red4 }
 hl["Operator"] = { fg = yellow2 }
 hl["PreProc"] = { link = "Normal" }
@@ -117,7 +119,7 @@ hl["Repeat"] = { link = "Conditional" }
 hl["Statement"] = { link = "Keyword" }
 hl["StorageClass"] = { link = "Type" }
 hl["Structure"] = { link = "Type" }
-hl["Type"] = { fg = blue2 }
+hl["Type"] = { fg = blue3 }
 hl["Typedef"] = { link = "Type" }
 
 --------------------------------------------------
@@ -125,9 +127,9 @@ hl["Typedef"] = { link = "Type" }
 --------------------------------------------------
 -- diff
 hl["DiffAdd"] = { bg = green1, fg = green3 }
-hl["DiffChange"] = { bg = utils.tint(blue1, -40) }
+hl["DiffChange"] = { bg = utils.tint(blue2, -40) }
 hl["DiffDelete"] = { bg = red1, fg = red3 }
-hl["DiffText"] = { bg = blue1 }
+hl["DiffText"] = { bg = blue2 }
 
 -- Gitcommit diffs
 -- https://github.com/vim/vim/blob/c54f347d63bcca97ead673d01ac6b59914bb04e5/runtime/syntax/diff.vim
@@ -159,7 +161,7 @@ hl["helpOption"] = { link = "Normal" }
 hl["helpVim"] = { link = "Normal" }
 
 -- Markdown
-hl["markdownBlockquote"] = { fg = blue3 }
+hl["markdownBlockquote"] = { fg = blue4 }
 hl["markdownCodeBlock"] = { bg = gray3 }
 hl["markdownHeadingRule"] = { link = "markdownRule" }
 hl["markdownLinkText"] = { link = "String" }
@@ -171,12 +173,12 @@ hl["markdownUrl"] = { link = "@text.uri" }
 -- Treesitter
 --------------------------------------------------
 -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
-hl["@namespace"] = { fg = blue4 }
+hl["@namespace"] = { fg = blue5 }
 hl["@number.comment"] = { link = "Comment" }
 hl["@punctuation"] = { link = "Normal" }
 hl["@string.regex"] = { fg = green2 }
 hl["@markup.raw.block"] = { link = "markdownCodeBlock" }
-hl["@text.uri"] = { fg = blue2, underline = true }
+hl["@text.uri"] = { fg = blue3, underline = true }
 hl["@constant.builtin"] = { link = "Constant" }
 hl["@function.call"] = { link = "Normal" }
 hl["@markup.heading"] = { link = "Function" }
@@ -210,7 +212,7 @@ hl["@punctuation.special.markdown"] = { link = "@markup.quote.markdown" }
 
 for level = 1, 6 do
 	local heading = "@markup.heading." .. level .. ".markdown"
-	hl[heading] = { fg = blue4 }
+	hl[heading] = { fg = blue5 }
 end
 
 -- Comment keywords
@@ -218,7 +220,7 @@ for type, color in pairs({
 	error = { bg = red5, fg = gray9 },
 	danger = { bg = red5, fg = gray9 },
 	warning = { bg = yellow1, fg = gray0 },
-	todo = { bg = blue4, fg = gray0 },
+	todo = { bg = blue5, fg = gray0 },
 	note = { bg = gray9, fg = gray0 },
 }) do
 	hl["@comment." .. type] = color
@@ -232,7 +234,7 @@ end
 for type, color in pairs({
 	Error = red5,
 	Warn = yellow1,
-	Info = blue4,
+	Info = blue5,
 	Hint = gray9,
 	Ok = green2,
 }) do
@@ -255,10 +257,10 @@ end
 -- Plugins
 --------------------------------------------------
 -- folke/lazy.nvim
+hl["LazyButton"] = { bg = gray4 }
 hl["LazyH2"] = { link = "FloatTitle" }
-hl["LazyButton"] = { link = "Visual" }
 hl["LazyButtonActive"] = { link = "Search" }
-hl["LazyCommit"] = { link = "@markup.raw.block" }
+hl["LazyCommit"] = { link = "" }
 hl["LazyCommitType"] = { link = "@markup.heading.gitcommit" }
 hl["LazyCommitIssue"] = { link = "Number" }
 hl["LazyProgressDone"] = { link = "LazyComment" }
@@ -274,7 +276,7 @@ hl["LazyReasonStart"] = { link = "Comment" }
 hl["LazySpecial"] = { link = "Comment" }
 
 -- mason-org/mason.nvim
-hl["MasonLink"] = { fg = blue2 }
+hl["MasonLink"] = { fg = blue3 }
 hl["MasonError"] = { link = "DiagnosticError" }
 hl["MasonMuted"] = { link = "Comment" }
 hl["MasonHeader"] = { link = "FloatTitle" }
@@ -294,13 +296,13 @@ hl["MasonHighlightBlockBoldSecondary"] = {}
 
 -- lewis6991/gitsigns.nvim
 hl["GitSignsAdd"] = { fg = utils.tint(green2, -25) }
-hl["GitSignsChange"] = { fg = utils.tint(blue4, -25) }
+hl["GitSignsChange"] = { fg = utils.tint(blue5, -25) }
 hl["GitSignsDelete"] = { fg = utils.tint(red5, -25) }
 hl["GitSignsChangedelete"] = { link = "GitSignsChange" }
 hl["GitSignsTopdelete"] = { link = "GitSignsDelete" }
 hl["GitSignsUntracked"] = { link = "NonText" }
 hl["GitSignsStagedAdd"] = { fg = utils.tint(green2, -60) }
-hl["GitSignsStagedChange"] = { fg = utils.tint(blue4, -60) }
+hl["GitSignsStagedChange"] = { fg = utils.tint(blue5, -60) }
 hl["GitSignsStagedDelete"] = { fg = utils.tint(red5, -60) }
 hl["GitSignsStagedChangedelete"] = { link = "GitSignsStagedChange" }
 hl["GitSignsStagedTopdelete"] = { link = "GitSignsStagedDelete" }
@@ -318,6 +320,7 @@ hl["GitSignsVirtLnum"] = { link = "LineNr" }
 
 -- stevearc/aerial.nvim
 hl["AerialLine"] = { link = "PmenuSel" }
+hl["AerialNormal"] = { link = "" }
 
 -- folke/edgy.nvim
 hl["EdgyIcon"] = { fg = gray6, bg = gray2 }
@@ -333,7 +336,7 @@ hl["CmpItemKind"] = { link = "Keyword" }
 hl["BlinkCmpDocBorder"] = { link = "FloatBorder" }
 hl["BlinkCmpDocSeparator"] = { link = "NonText" }
 hl["BlinkCmpGhostText"] = { link = "NonText" }
-hl["BlinkCmpKind"] = { fg = blue3 }
+hl["BlinkCmpKind"] = { fg = blue4 }
 hl["BlinkCmpLabel"] = { fg = gray7 }
 hl["BlinkCmpLabelDetail"] = { link = "NonText" }
 hl["BlinkCmpLabelDescription"] = { fg = gray5 }
@@ -350,10 +353,10 @@ hl["MiniCursorwordCurrent"] = {}
 hl["MiniCursorword"] = { link = "IlluminatedWordText" }
 
 -- rareitems/hl_match_area.nvim
-hl["MatchArea"] = { bg = gray3 }
+hl["MatchArea"] = { link = "MatchParen" }
 
 -- mcauley-penney/visual-whitespace.nvim
-hl["VisualNonText"] = { fg = hl["Comment"]["fg"], bg = hl["Visual"]["bg"] }
+hl["VisualNonText"] = { fg = blue1, bg = hl["Visual"]["bg"] }
 
 -- mcauley-penney/match-visual.nvim
 hl["VisualMatch"] = { link = "MatchParen" }
