@@ -58,7 +58,7 @@ hl["MoreMsg"] = { link = "ModeMsg" }
 hl["MsgArea"] = { link = "Normal" }
 hl["MsgSeparator"] = { fg = gray2, bg = gray2 }
 hl["NonText"] = { fg = gray5 }
-hl["Normal"] = { fg = gray10 }
+hl["Normal"] = { fg = gray10, bg = gray0 }
 hl["NormalFloat"] = { fg = gray9, bg = gray1 }
 hl["Pmenu"] = { fg = gray7, bg = gray2 }
 hl["PmenuMatch"] = { fg = blue4 }
